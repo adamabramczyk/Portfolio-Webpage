@@ -1,0 +1,240 @@
+/* general */
+
+/* Proper background img display */
+html,
+body {
+    height:100%;
+}
+
+/* carousel items */
+
+.carousel-control-prev,
+.carousel-control-next{
+    z-index: 2;
+}
+
+/* scrollbar side and down display */
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.ma_background{
+    height:100%;
+    background: url(../images/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-color:rgb(79, 0, 131);    
+}
+
+/* navbar - margins */
+.ma_marginRight{
+    margin-right: 7%;
+}
+
+.ma_marginLeft{
+    margin-left: 6%;
+    padding: 0 0 0 8px;
+}
+
+/* footer */
+
+#ma_footer{
+    background-color: rgb(42, 2, 70);
+    color: white;
+    height:56px;
+}
+
+#ma_footer p{
+    text-align: center; 
+    line-height: 56px;
+}
+
+/* about - photo */
+
+.row{
+    margin: 100px;
+}
+
+img.user{
+  margin-top: 30px;  
+  margin-left:auto;
+  margin-right: auto;
+  display:block;
+}
+
+/* about - text */
+
+h1{
+    padding: 20px 0 20px 0;   
+}
+
+.ma_overlay { 
+    display: block;
+    color:#fff;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    width: 100%; 
+    text-align:center;
+}
+
+.ma_arsenal{
+    color: white;
+}
+
+/* about - responsive */
+
+@media only screen and (max-width: 575px){
+.about {
+    text-align: center;
+    margin-top: 20px;
+}
+#ma_backToTop{
+    position: fixed;
+    bottom: 5px!important;
+    right: 5px!important; 
+}
+}
+
+/* about - dropdown */
+
+.ma_dropdown{
+margin-top: 30px;
+}
+
+#dropdownMenuButton{
+background-color: rgb(0, 184, 144);
+}
+
+
+/* projects - gallery */
+
+div.gallery {
+    align-content: center;
+    margin: 5px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+div.gallery:hover {
+    border: 5px solid rgb(255, 255, 255);
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color:  rgb(0, 184, 144);
+    color: white;
+} 
+
+/* contact */
+
+#ma_form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+
+.ma_title{
+    text-align: center;
+}
+
+.ma_title_violet{
+    text-align: center;
+    color: rgb(79, 0, 131);
+}
+
+.ma_icons{
+    margin: 50px;
+    text-align: center;
+}  
+
+a.ma_link:link, a.ma_link:active, a.ma_link:visited {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.ma_linkedin{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 2px solid rgb(255, 255, 255);
+    padding:10px;
+    margin: 10px;
+}
+
+div.ma_linkedin:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(79, 0, 131);
+}
+
+.ma_behance{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 2px solid rgb(255, 255, 255);
+    padding:10px;
+    margin: 10px;
+}
+
+div.ma_behance:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(79, 0, 131);
+}
+
+.ma_pinterest{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 2px solid rgb(255, 255, 255);
+    padding:10px;
+    margin: 10px;
+}
+
+div.ma_pinterest:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(79, 0, 131);
+}
+
+/* Back to top button */
+#ma_backToTop {
+    position: fixed;
+    bottom: 61px;
+    right: 40px;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-decoration: none;
+    background:  rgb(42, 2, 70);
+    color: white;
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 0px;
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+#ma_backToTop:hover {
+    background: white;
+    color: rgb(79, 0, 131);
+}
+#ma_backToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
